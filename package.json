@@ -28,10 +28,12 @@
     "@adonisjs/shield": "^1.0.8",
     "axios": "^0.19.0",
     "rss-in-json": "^1.0.0",
-    "rss-parser": "^3.7.3",
-    "rss-to-json": "^1.0.5"
   },
   "devDependencies": {},
+    "engines": {
+        "node": "10.15.0"
+    },
+    
   "autoload": {
     "App": "./app"
   }
