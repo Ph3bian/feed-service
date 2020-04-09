@@ -3,6 +3,7 @@
 Feed service allows you fetch your medium stories in json format
 
 ## Endpoints
+[FEED SERVICE](https://mediumfeed-service.herokuapp.com/)
 
 ```
 GET /posts?uri={postName}
