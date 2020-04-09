@@ -1,31 +1,21 @@
-# Adonis fullstack application
+# Feed Service
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+Feed service allows you fetch your medium stories in json format
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+## Endpoints
 
-## Setup
-
-Use the adonis command to install the blueprint
-
-```bash
-adonis new yardstick
+```
+GET /posts?uri={postName}
 ```
 
-or manually clone the repo and then run `npm install`.
+## Project Description (User Stories)
+
+- User can fetch Medium posts
 
 
-### Migrations
+## Technologies Used
 
-Run the following command to run startup migrations.
+Built with Express, Express is a minimal and flexible Node.js web application framework
 
-```js
-adonis migration:run
-```
+
+
