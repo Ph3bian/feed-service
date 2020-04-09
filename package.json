@@ -1,39 +1,48 @@
 {
-  "name": "adonis-fullstack-app",
-  "version": "4.1.0",
-  "adonis-version": "4.1.0",
-  "description": "The fullstack application boilerplate for Adonisjs",
+  "name": "feed-service",
+  "version": "1.0.0",
+  "description": "rss feed for medium",
   "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "node ace test"
-  },
+  "author": "Phebian",
+  "license": "ISC",
   "keywords": [
-    "adonisjs",
-    "adonis-app"
+    "rss",
+    "medium"
   ],
-  "author": "",
-  "license": "UNLICENSED",
-  "private": true,
-  "dependencies": {
-    "@adonisjs/ace": "^5.0.8",
-    "@adonisjs/auth": "^3.0.7",
-    "@adonisjs/bodyparser": "^2.0.5",
-    "@adonisjs/cors": "^1.0.7",
-    "@adonisjs/fold": "^4.0.9",
-    "@adonisjs/framework": "^5.0.9",
-    "@adonisjs/ignitor": "^2.0.8",
-    "@adonisjs/lucid": "^6.1.3",
-    "@adonisjs/session": "^1.0.27",
-    "@adonisjs/shield": "^1.0.8",
-    "axios": "^0.19.0",
-    "rss-in-json": "^1.0.0"
-  },
-  "devDependencies": {},
   "engines": {
     "node": "10.15.0"
   },
-  "autoload": {
-    "App": "./app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ph3bian/feed-service.git"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "start:dev": "nodemon --exec babel-node server/index.js",
+    "build": "babel -d dist server/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "rimraf": "^3.0.2",
+    "rss-in-json": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Ph3bian/feed-service/issues"
+  },
+  "homepage": "https://github.com/Ph3bian/feed-service#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.3"
   }
 }
