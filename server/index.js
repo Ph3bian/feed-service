@@ -18,6 +18,4 @@ app.get("/", (_, res) =>
     .json({ success: true, status: 200, message: "Hello from Feed Service" })
 );
 app.use("/", router);
-app.listen(port, () =>
-  console.log(`Example app listening at http://localhost:${port}`)
-);
+app.listen(process.env.PORT || port);
